@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>Hubert Myszka - Contact</title>
+  </head>
+  <body data-page="contact">
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Contact</h1>
+      <p>
+        If you have any questions send me an e-mail, and I will answer them as
+        soon as possible 😉
+      </p>
+      <form id="form" novalidate>
+        <label for="email">E-mail: </label><br />
+        <input
+          id="email"
+          name="email"
+          type="text"
+          placeholder="np. michal.nowak@example.com"
+        /><br /><br />
+        <label for="topic">Topic: </label><br />
+        <select id="topic" name="topic" required>
+          <option value="" disabled selected>— Select a topic —</option>
+          <option value="Question">Question</option>
+          <option value="Collab">Collaboration</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="message"> Message: </label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Write something..."
+        ></textarea
+        ><br /><br />
+
+        <input type="submit" value="Send" />
+        <p id="announcement" class="ok" style="display: none">
+          Thanks, everything looks fine.
+        </p>
+        <p id="error" class="error" style="display: none">
+          Fill the gaps correctly
+        </p>
+      </form>
+    </main>
+    <footer>
+      <p>
+        Hubert Myszka • Static website • <span id="time"></span>
+        <a href="https://mysiax05.github.io/Hobby-page" target="_blank"
+          >Live version</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
